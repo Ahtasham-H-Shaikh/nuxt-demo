@@ -1,0 +1,1093 @@
+
+body {
+    margin: 0;
+}
+
+.dummyBanner {
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    margin-top: 0px !important;
+    top: 85.4px;
+    width: 100%
+}
+
+@media(max-width: 600px) {
+    .dummyBanner{
+        top: 72px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #fff;
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media(min-width:601px) {
+    .cocMainPropeModal .submitOfferloginRegBlock {
+        animation: unset;
+    }
+}
+
+.CocMainBanner {
+    margin-top: 82px;
+
+    @media(max-width:990px) {
+        margin-top: 72px;
+    }
+
+    .bannerTitleBox {
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        left: 0px;
+
+        @media(max-width:600px) {
+            position: relative;
+            height: auto;
+            width: 100%;
+            padding-top: 36px;
+            padding-bottom: 36px;
+            background: transparent;
+        }
+    }
+
+    .maincomboBanner {
+        height: 397px;
+        width: 100%;
+        position: relative;
+
+        @media(max-width:600px) {
+            height: auto;
+
+        }
+    }
+
+    .imageSection {
+        height: 100%;
+    }
+
+    .cocBannerTitle {
+        font-size: 64px;
+        line-height: 80px;
+        text-align: center;
+        width: 792px;
+        margin: auto;
+        font-weight: 600;
+        display: block;
+        color: #fff;
+        padding-top: 70px;
+
+        @media(max-width:991px) {
+            width: 100%;
+        }
+
+        @media(max-width:600px) {
+            font-size: 32px;
+            line-height: 38px;
+            color: #000;
+            padding-top: 0px;
+            width: 336px;
+        }
+    }
+
+    .cocBannerImage {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+
+        @media(max-width:600px) {
+            height: 230px;
+            display: none;
+        }
+    }
+
+    .cocBannerMobImage {
+        display: none;
+
+        @media(max-width:600px) {
+            display: block;
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+    }
+}
+
+.compareSec {
+    background: #FAFAFC;
+    border-radius: 16px;
+    padding: 0px 24px;
+    position: relative;
+    top: -125px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
+
+    @media(max-width:600px) {
+        padding: 0px 16px;
+        bottom: -145px;
+        padding-bottom: 16px;
+        background: #fff;
+    }
+}
+
+
+
+.compareDesc {
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    margin-bottom: 0;
+
+    @media(max-width:600px) {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+}
+
+.compareBtn {
+    width: 280px;
+    height: 70px;
+    display: block;
+    margin: auto;
+
+    @media(max-width:600px) {
+        width: 100%;
+        height: 48px;
+        margin-top: 20px;
+    }
+
+    .compareCostBtn {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 12px;
+        border: none;
+        background: linear-gradient(90deg, #2876C1 0%, #0E5293 100%);
+        color: #fff;
+        font-size: 20px;
+        text-align: left;
+        line-height: 30px;
+        font-weight: 600;
+        padding-left: 52px;
+        box-sizing: border-box;
+        position: relative;
+        top: 32px;
+
+        transition: 0.4s ease-in box-shadow;
+
+        &.loading_btn {
+            .cocArrowBox {
+                display: none;
+            }
+
+            pointer-events: none;
+
+            &:before {
+                @media(min-width:601px) {
+                    top: 50%;
+                }
+            }
+
+            &:after {
+                @media(min-width:601px) {
+                    top: 50%;
+                }
+            }
+        }
+
+        .costSec {
+            @media(max-width:600px) {
+                display: none;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 10px 20px -10px #0c5aa5;
+        }
+
+        @media(max-width:600px) {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            padding-left: 0px;
+            text-align: center;
+            top: 0px;
+        }
+
+        .cocArrowBox {
+            @media(max-width:600px) {
+                display: none;
+            }
+        }
+
+        .cocArrow {
+            right: 53px;
+        }
+    }
+}
+
+.compareList {
+    display: flex;
+    margin-bottom: 0px;
+    border: 1px solid #DCDCDC;
+    background: #fff;
+    border-radius: 16px;
+    padding: 3px 0px;
+    box-sizing: border-box;
+
+    @media(max-width:767px) {
+        flex-wrap: wrap;
+    }
+
+    @media(max-width:600px) {
+        padding: 0px;
+    }
+
+    .inputBlock {
+        width: 33.33%;
+        padding: 9px 0px;
+        border-right: 1px solid #DCDCDC;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        position: relative;
+
+        @media(max-width:990px) {
+            padding-left: 12px;
+        }
+
+        @media(max-width:767px) {
+            width: 50%
+        }
+
+        @media(max-width:600px) {
+            width: 50%;
+            padding-left: 0px;
+        }
+
+        &:nth-child(2) {
+            @media(max-width:767px) {
+                border-right: none;
+            }
+        }
+
+        .icon {
+            position: relative;
+            top: 3px;
+            transition:0.3s ease all;
+            width:16px;
+            height: 25px;
+
+            @media(max-width:600px) {
+                // display: none;
+                left: 12px;
+                top: 2px;
+
+                img {
+                    width: 10px;
+                }
+                &.activeIcon{
+                    top:7px;
+                }
+            }
+
+            &.map-icon {
+                opacity: 0.4;
+            }
+        }
+
+        &:last-child {
+            border-right: none;
+
+            @media(max-width:767px) {
+                border-top: 1px solid #DCDCDC;
+                width: 100%;
+            }
+        }
+    }
+
+    .inputBoxElement {
+        position: relative;
+        width: 100%;
+
+        &.inputLocation {
+            input {
+                &.form-control {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        input {
+            &.form-control {
+                background: transparent;
+                border: none;
+                border-radius: 12px;
+                // color: #000;
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 18px;
+                font-weight: 600;
+                height: 48px;
+                letter-spacing: 0;
+                line-height: 24px;
+                outline: 0 solid transparent;
+                padding: 13px 12px;
+                width: 100%;
+                transition: 0.3s ease all;
+
+                @media(max-width:600px) {
+                    font-size: 14px;
+                    line-height: 21px;
+                    padding-left: 20px;
+                }
+
+                &:focus+.labelTag {
+                    color: rgba(0, 0, 0, .55);
+                    font-size: 12px;
+                    left: 12px !important;
+                    top: -2px;
+
+                    @media(max-width:600px) {
+                        font-size: 12px;
+                        top: 0px;
+                        left: 20px !important;
+                    }
+                }
+
+                &:not(:placeholder-shown)+.labelTag {
+                    color: rgba(0, 0, 0, .55);
+                    font-size: 12px;
+                    left: 12px !important;
+                    top: -2px;
+
+                    @media(max-width:600px) {
+                        left: 20px !important;
+                    }
+                }
+
+                &:focus {
+                    // padding: 12px 12px 0px 12px;
+                    padding-top: 28px;
+                }
+
+                &:not(:placeholder-shown) {
+                    padding-top: 28px;
+                }
+
+            }
+        }
+
+        .labelTag {
+            background-color: #fff;
+            color: rgba(0, 0, 0, 0.55);
+            font-size: 16px;
+            font-weight: 400;
+            left: 12px;
+            letter-spacing: 0;
+            line-height: 24px;
+            padding: 0 0px;
+            pointer-events: none;
+            position: absolute;
+            top: 12px;
+            transition: all .3s;
+
+            @media(max-width:600px) {
+                font-size: 14px;
+                line-height: 21px;
+                top: 15px;
+                left: 20px;
+            }
+
+            @media(max-width:362px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
+.CocWrapper {
+    width: 95%;
+    max-width: 1292px;
+    display: block;
+    margin: auto;
+    position: relative;
+
+    @media(max-width:600px) {
+        width: 100%;
+        max-width: 100%;
+        padding: 0px 16px;
+        box-sizing: border-box;
+    }
+}
+
+.CocSectionWrapper {
+    &.CocLivingScore {
+        margin-top: -72px;
+
+        @media(max-width:600px) {
+            margin-top: -110px;
+        }
+    }
+
+    &.CocFlCities {
+        margin-top: 50px;
+
+        @media(max-width:600px) {
+            margin-top: 35px;
+        }
+    }
+
+    &.cocMortgageBox {
+        .addborderDiv {
+            background-color: rgba(11, 90, 165, 0.102);
+            border: 1px solid #0b5aa5;
+            position: absolute;
+            transition: all 0.5s;
+            pointer-events: none;
+            border-radius: 8px;
+            opacity: 0;
+            z-index: 1;
+
+            @media (max-width: 767px) {
+                display: none !important;
+                opacity: 0 !important;
+            }
+        }
+
+        .cocTitle {
+            margin-bottom: 25px;
+
+            @media(max-width:600px) {
+                padding-right: 20px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    &.cocCostCalcText {
+        margin-top: 50px;
+
+        @media(max-width:600px) {
+            margin-top: 34px;
+        }
+
+        .cocDesc {
+            @media(max-width:600px) {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+    }
+}
+
+.CocGreen {
+    color: #25AF60;
+    font-weight: 600;
+}
+
+.CocRed {
+    color: #C13515;
+    font-weight: 600;
+}
+
+.cocTitle {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #000;
+
+    @media(max-width:600px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
+.cocDesc {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    margin-top: 10px;
+
+    @media(max-width:600px) {
+        font-size: 14px;
+        line-height: 21px;
+        color: #000;
+    }
+
+    &.cocLegal {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 48px;
+
+        @media(max-width:600px) {
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 28px;
+        }
+    }
+}
+
+
+
+.cocMainMiddleLis {
+    .borderDiv {
+        background-color: rgba(11, 90, 165, .102);
+        border: 1px solid #0b5aa5;
+        border-radius: 8px;
+        // margin-left: 13px;
+        margin-top: 1px;
+        opacity: 0;
+        position: absolute;
+        transition: all .5s;
+        pointer-events: none;
+
+        @media (max-width: 767px) {
+            display: none !important;
+            opacity: 0 !important;
+        }
+    }
+}
+
+.CocMiddleList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+
+    @media(max-width:767px) {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+.CoCMidCard {
+    text-decoration: none;
+    padding: 12px 20px 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(50% - 24px);
+    border: 1px solid #0000001A;
+    border-radius: 12px;
+    margin: 0px 12px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+
+    @media(max-width:767px) {
+        margin: 0;
+        padding: 12px 16px 11px 16px;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    @media(max-width:600px) {
+        opacity: 0;
+        transform: translateY(45px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+
+        &.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media(max-width:370px) {
+        padding: 10px 12px 10px 12px;
+    }
+
+    &.cocMidDiffCard {
+        margin-left: 0px;
+        width: calc(50% - 12px);
+        padding: 30px 20px 30px 20px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.3s ease-in-out all;
+        border-color: #0B5AA5;
+        box-shadow: 0px 0px 10px 0px transparent;
+        background-color: #0B5AA51A;
+
+        .cocLoaderBox {
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: transparent;
+            z-index: 1;
+
+            .loaderBox {
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+
+                .card-loader {
+                    border-radius: 12px;
+                }
+            }
+        }
+
+        @media(max-width:767px) {
+            width: 100%;
+        }
+
+        @media(max-width:600px) {
+            padding: 15px 20px 15px 20px;
+            margin-top: 10px;
+
+        }
+
+        @media(max-width:370px) {
+            padding: 15px 10px 15px 10px;
+        }
+
+        .cocArrow {
+            @media(max-width:600px) {
+                right: 16px;
+            }
+        }
+
+        // &:hover{
+        //     border-color: #0B5AA5;
+        //     box-shadow: 0px 0px 10px 0px transparent;
+        //     background-color: #0B5AA51A;
+        // }
+    }
+}
+
+.cocMidHovText {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    // color: #000000;
+    color: rgba(0, 0, 0, 0.6);
+
+    @media(max-width:600px) {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.cocContent {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #000000;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+    @media(max-width:600px) {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 10px;
+    }
+
+    @media(max-width:389px) {
+        width: 160px;
+    }
+}
+
+.cocRightCard {
+    .cocDollar {
+        display: block;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+        color: #000;
+        width: 162px;
+        margin-bottom: 2px;
+
+        @media(max-width:600px) {
+            font-size: 14px;
+            line-height: 21px;
+            width: 120px;
+        }
+    }
+}
+
+.graphColorRed {
+    color: #C13515;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 25px;
+
+    @media(max-width:600px) {
+        font-size: 12px;
+        line-height: 16.5px;
+    }
+}
+
+.graphColorGreen {
+    // color: #25AF60;
+    color:#146e3a;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 25px;
+
+    @media(max-width:600px) {
+        font-size: 12px;
+        line-height: 16.5px;
+    }
+}
+
+.graphImg {
+    margin-right:4px;
+    img {
+        @media(max-width:600px) {
+            width: 15px;
+        }
+    }
+}
+
+.buyCard {
+    width: 42px;
+    height: 42px;
+    display: block;
+    text-align: center;
+    background: #0B5AA50D;
+    border-radius: 50%;
+    line-height: 54px;
+
+    @media(max-width:600px) {
+        width: 32px;
+        height: 32px;
+        line-height: 42px;
+    }
+
+    img {
+        width: 22px;
+        height: 22px;
+
+        @media(max-width:600px) {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.cocTopCost {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 22px;
+
+    @media(max-width:600px) {
+        margin-bottom: 20px;
+    }
+
+    @media(max-width:359px) {
+        flex-direction: column;
+    }
+}
+
+.cocTopLeftText {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #000;
+
+    @media(max-width:600px) {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    @media(max-width:389px) {
+        .cocTopLeftText {
+            font-size: 13px;
+        }
+    }
+}
+
+.cocLeftCard {
+    display: flex;
+    align-items: center;
+    // padding-left:15px;
+    box-sizing: border-box;
+}
+
+.cocTopRightText {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
+    display: flex;
+    position: absolute;
+    right: 0;
+    .cocCompareWithText{
+        display: block;
+        padding-top: 3px;
+        @media(max-width:600px) {
+            padding-top: 0;
+        }
+    }
+
+    @media(max-width:600px) {
+        font-size: 14px;
+        line-height: 21px;
+        right: 16px;
+        gap: 0.2rem;
+    }
+
+    @media(max-width:389px) {
+        font-size: 12px;
+    }
+
+    @media(max-width:359px) {
+        padding-top: 5px;
+    }
+}
+
+.cocSelectBox {
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    // padding-left: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1019607843);
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    width:auto;
+    min-height: 36px;
+    @media(max-width:600px){
+        padding: 0px 0px 0px 0px;
+        min-height: 30px;
+        margin-top:-5px;
+        // width:105px;
+    }
+    &:before {
+        z-index: 11;
+        content: '';
+        position: absolute;
+        top: 17px;
+        // right: 10px;
+        right: 7px;
+        width: 20px;
+        height: 20px;
+        background: url(https://dtpwvruv8ddnl.cloudfront.net/images/mortgage-calculator/up-option.svg) no-repeat center;
+        background-size: 14px 12px;
+        -webkit-transform: translateY(-50%) rotate(180deg);
+        -moz-transform: translateY(-50%) rotate(180deg);
+        transform: translateY(-50%) rotate(180deg);
+        /* Rotate the arrow image */
+        pointer-events: none;
+        /* Ensure the pseudo-element doesn't interfere with clicks */
+        @media(max-width:600px){
+            top: 14px;
+            right: 4px;
+            z-index: 11;
+            background-size: 10px 10px;
+        }
+    }
+}
+
+
+.averageSelect {
+    position: relative;
+    z-index: 10;
+    // border: 1px solid #eee;
+    // box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    scrollbar-width: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #0B5AA5;
+    // font-size: 20px;
+    // line-height: 30px;
+    font-size: 18px;
+    line-height: 27px;
+    border: none;
+    outline: none;
+    text-align: center;
+    // padding: 0px 35px 0px 10px;
+    padding-right: 30px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    // background: url(https://dtpwvruv8ddnl.cloudfront.net/images/mortgage-calculator/up-option.svg) no-repeat right 10px center;
+    // background-size: 20px 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width:100%;
+    height: 100%;
+    option{
+        padding:6px 0px;
+        box-sizing: border-box;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    @media(max-width:600px) {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 4px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        position: relative;
+        -webkit-transform: translateX(0px) scale(0.75);
+        -moz-transform: translateX(0px) scale(0.75);
+        transform: translateX(0px) scale(0.75);
+    }
+
+    40% {
+        position: relative;
+        -webkit-transform: translateX(-8px) scale(0.75);
+        -moz-transform: translateX(-8px) scale(0.75);
+        transform: translateX(-8px) scale(0.75);
+    }
+
+    70% {
+        position: relative;
+        -webkit-transform: translateX(-8px) scale(0.75);
+        -moz-transform: translateX(-8px) scale(0.75);
+        transform: translateX(-8px) scale(0.75);
+    }
+
+    100% {
+        position: relative;
+        -webkit-transform: translateX(0px) scale(1);
+        -moz-transform: translateX(0px) scale(1);
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@media(max-width:600px) {
+    .cocMainModal {
+        width: 100%;
+        left: 0;
+        position: fixed;
+        bottom: -100%;
+        z-index: 999;
+        top: auto;
+        border-radius: 0px;
+        transition: 0.4s linear all;
+
+        &.active {
+            height: 100%;
+
+            .mob-liv-img {
+                opacity: 0;
+                top: -390px;
+                animation: fadeClose 0.2s ease-in forwards;
+                animation-delay: 0.5s;
+            }
+
+            .CocPropertyModal.CocUpadtedModal {
+                bottom: 0px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:600px) {
+    .cocMainPropeModal {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        bottom: 0px;
+        z-index: 999;
+        top: auto;
+        border-radius: 16px;
+        transition: 0.4s linear all;
+
+        &.active {
+            .mob-liv-img {
+                opacity: 0;
+                animation: fadeClose 0.2s ease-in forwards;
+                animation-delay: 0.5s;
+            }
+
+            .CocPropertyModal {
+                bottom: 0px;
+            }
+        }
+    }
+}
+
+input {
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+.regofferTitle {
+    margin: 0 !important;
+}
+
+@media(max-width: 600px) {
+    #newLocErr {
+        display: none;
+    }
+}
+
+#newLocErr {
+    bottom: -28px;
+}
+
+.modalGraph {
+    height: 25px;
+    width: 25px;
+}
+
+@media (max-width: 600px) {
+    .modalGraph {
+        height: 15px;
+        width: 17px;
+    }
+}
+#costOfLivingCalculatoreApp {
+    .submitOfferloginRegBlock {
+        @media(max-width:767px){
+            padding: 0px 0px;
+                box-sizing: border-box;
+                .submitOfferList {
+                    padding: 20px 20px 25px;
+                }
+            }
+        }  
+        @media(max-width:600px){
+            .submitOfferList {
+                    padding: 15px 20px 30px;
+            }
+        } 
+        
+}
