@@ -1,7 +1,6 @@
 async function fetchNewLocationData(state, city) {
     const config = useRuntimeConfig(); 
     const backendUrl = config.public.backendUrl;
-    console.log('backend url', backendUrl)
     try {
         let rawRes = await fetch(`${backendUrl}/api/col-city-state-data`, {
             method: "POST",
@@ -31,9 +30,11 @@ export default defineNuxtRouteMiddleware(async (to) => {
         return navigateTo('/cost-of-living/florida')
     }
     let res = await fetchNewLocationData(slug[0], slug?.[1])
-    
+    if(!res.data.stateData?.length){
+        throw createError({ statusCode: 404, message: 'Page Not Found' });
+    }
     if((slug[0].toLowerCase() !== 'florida' && res.data.stateData[0].state_name.toLowerCase() === 'fl') ){
-        // return navigateTo('/404')
+        throw createError({ statusCode: 404, message: 'Page Not Found' });
         console.log('redirecting')
     }
 

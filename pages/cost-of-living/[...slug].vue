@@ -361,8 +361,7 @@ export default {
         handleOnFocus(variable) {
             if (!this.isMapsScriptLoaded) {
                 this.loadGoogleMapsScript();
-                this.isMapsScript
-                Loaded = true;
+                this.isMapsScriptLoaded = true;
             }
             this.$refs[variable].classList.add("activeIcon");
         },
@@ -817,7 +816,6 @@ export default {
             return Math.round(counter);
         },
         renderChart() {
-            console.log("rendering chart")
             if (this.showBarChart && !this.isCityPassed) {
                 const ctx = document.getElementById("myBarChart").getContext("2d");
                 if (this.myBarChart) {
@@ -836,7 +834,6 @@ export default {
                         // Register Chart.js components and datalabels plugin
                         Chart.register(BarController, CategoryScale, LinearScale, BarElement, Tooltip, ChartDataLabels.default);
                         // Create the chart once the modules are loaded
-                        console.log('creating new chart syntax')
                         this.myBarChart = new Chart(ctx, {
                             type: "bar",
                             data: {
@@ -1340,13 +1337,14 @@ export default {
     },
     created(){
         this.compareWith = this.usData
-    },
-    mounted() {
         const route = useRoute();
         const slug = route.params.slug
-        this.stateName = slug[0]
-        this.cityName = slug?.[1]
+        this.stateName = slug[0].charAt(0).toUpperCase() + slug[0].slice(1)
+        this.cityName = slug?.[1].charAt(0).toUpperCase() + slug[1].slice(1)
         this.isCityPassed = Boolean(this.cityName)
+        this.newLocation = this.isCityPassed ? `${this.cityName}, ${this.stateList[this.stateName]}` : `${this.stateName}`;
+    },
+    mounted() {
         this.fetchNewLocationData(this.stateName, this.cityName)
         .then(res => {
             console.log('value of init res', res)
@@ -1355,7 +1353,7 @@ export default {
             // this.checkValidPath()
         })
         if (this.showBarChart) this.setupObserver();        
-        fetch(`${this.backend_url}/api/pull/home-for-sale-widget-api/${this.stateList[slug[0].charAt(0).toUpperCase() + slug[0].slice(1)]}${this.isCityPassed ? `/${this.cityName.toLowerCase()}` : ""}`)
+        fetch(`${this.backend_url}/api/pull/home-for-sale-widget-api/${this.stateList[this.stateName]}${this.isCityPassed ? `/${this.cityName.toLowerCase()}` : ""}`)
             .then((rawRes) => {
                 return rawRes.ok ? rawRes.json() : { data: { state_count: 0 } };
             })
@@ -1370,7 +1368,6 @@ export default {
     
         this.isFullPageLoad = false;
         this.initCounterAnimation(this.newLocData);
-        this.newLocation = this.isCityPassed ? `${this.cityName}, ${this.stateList[this.stateName]}` : `${this.stateName}`;
         window.addEventListener("resize", this.checkMobile);
         // this.setupIntersectionCardObserver();
     },
