@@ -233,6 +233,8 @@
                 </div>
             </div>
 
+            <!-- <MortgageCalculator :defaultData="defaultData" ref="mortgageRef" v-if="defaultData" /> -->
+
             <div class="CocSectionWrapper cocCostCalcText">
                 <h2 class="cocTitle">What is a Cost of Living Calculator?</h2>
                 <p class="cocDesc">
@@ -255,9 +257,9 @@
                 <p class="cocDesc cocExpLink" v-if="isCityPassed">Explore all homes for sale in {{ `${cityName}, ${stateName} ` }}</p>
                 <p class="cocDesc cocExpLink" v-else>Explore all homes for sale in {{ stateName }}</p>
                 <div class="cocSecBox">
-                    <a :href="`${baseUrl}`" class="cocSecLink">Home</a>
+                    <a :href="'/'" class="cocSecLink">Home</a>
                     <span class="angle_left"> > </span>
-                    <a :href="`${baseUrl}/homes-for-sale`" class="cocSecLink">Homes For Sale</a>
+                    <a :href="`/homes-for-sale`" class="cocSecLink">Homes For Sale</a>
                     <span class="angle_left"> ></span>
                     <template v-if="isCityPassed">
                         <a :href="`${baseUrl}/homes-for-sale/${urlFriendlyString(stateName)}`" class="cocSecLink"> {{ stateName }}</a>
@@ -1347,7 +1349,6 @@ export default {
     mounted() {
         this.fetchNewLocationData(this.stateName, this.cityName)
         .then(res => {
-            console.log('value of init res', res)
             this.stateData = res.data.stateData
             this.defaultData = res.data.defaultData
             // this.checkValidPath()
