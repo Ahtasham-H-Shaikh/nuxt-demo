@@ -283,8 +283,17 @@
 import $ from 'jquery';
 
 export default {
-    middleware: 'validateRoute',
     name: "BarChart",
+    setup() {
+        definePageMeta({
+            middleware: 'validate-route'
+        });
+        const stateName = useState('stateName');
+
+        return {
+            stateName
+        }
+    },
     data() {
         return {
             defaultData: null,
@@ -1333,6 +1342,11 @@ export default {
         this.compareWith = this.usData
     },
     mounted() {
+        const route = useRoute();
+        const slug = route.params.slug
+        this.stateName = slug[0]
+        this.cityName = slug?.[1]
+        this.isCityPassed = Boolean(this.cityName)
         this.fetchNewLocationData(this.stateName, this.cityName)
         .then(res => {
             console.log('value of init res', res)
@@ -1341,7 +1355,7 @@ export default {
             // this.checkValidPath()
         })
         if (this.showBarChart) this.setupObserver();        
-        fetch(`${this.backend_url}/api/pull/home-for-sale-widget-api/${this.stateList[this.stateName]}${this.isCityPassed ? `/${this.cityName.toLowerCase()}` : ""}`)
+        fetch(`${this.backend_url}/api/pull/home-for-sale-widget-api/${this.stateList[slug[0].charAt(0).toUpperCase() + slug[0].slice(1)]}${this.isCityPassed ? `/${this.cityName.toLowerCase()}` : ""}`)
             .then((rawRes) => {
                 return rawRes.ok ? rawRes.json() : { data: { state_count: 0 } };
             })
