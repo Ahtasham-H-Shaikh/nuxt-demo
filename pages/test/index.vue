@@ -1,5 +1,6 @@
 <template>
-    <h1 class="text-4xl text-slate-600">Hello World</h1>
+    <div class="h-20">Navbar</div>
+    <HousingMarketBanner/>
 </template>
     
 <script setup>

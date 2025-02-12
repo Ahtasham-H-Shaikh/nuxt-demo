@@ -1026,7 +1026,7 @@ export default {
         },
         convertToWordCase(str) {
             return str.replace(/\w\S*/g, (txt) => {
-                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                return txt?.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
             });
         },
 
@@ -1341,8 +1341,8 @@ export default {
         this.compareWith = this.usData
         const route = useRoute();
         const slug = route.params.slug
-        this.stateName = slug[0].charAt(0).toUpperCase() + slug[0].slice(1)
-        this.cityName = slug?.[1].charAt(0).toUpperCase() + slug[1].slice(1)
+        this.stateName = slug?.[0]?.charAt(0).toUpperCase() + slug[0].slice(1)
+        this.cityName = slug?.[1]?.charAt(0).toUpperCase() + slug[1].slice(1)
         this.isCityPassed = Boolean(this.cityName)
         this.newLocation = this.isCityPassed ? `${this.cityName}, ${this.stateList[this.stateName]}` : `${this.stateName}`;
     },
