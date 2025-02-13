@@ -1,6 +1,9 @@
 <template>
     <div class="h-20">Navbar</div>
-    <HousingMarketBanner/>
+    <div class="font-poppins">
+        <HousingMarketBanner/>
+        <p class="font-poppins">Hello with poppins</p>
+    </div>
 </template>
     
 <script setup>

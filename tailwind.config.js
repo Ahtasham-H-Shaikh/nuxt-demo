@@ -7,7 +7,11 @@ export default {
       "./app.vue"
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        }
+      },
     },
     plugins: [],
   };
