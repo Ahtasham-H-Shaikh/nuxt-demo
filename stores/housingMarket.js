@@ -5,6 +5,8 @@ export const useHousingMarketStore = defineStore('housingMarket', {
     jsonData: null
   }),
   actions: {
-    
+    setJsonData(data){
+      this.jsonData = data;
+    }
   }
 })

@@ -1,5 +1,6 @@
 {
     "state": "Florida",
+    "initial": "FL",
     "banner": {
         "h1": "Florida Housing Market",
         "description": "The landscape of Florida’s housing market evolves with shifting home prices and demand. Houzeo’s housing market report tracks constant changes in supply and demand across Florida. Our report offers real-time insights to help you make informed decisions."
@@ -52,6 +53,16 @@
             "timeToRead": "9 min",
             "heading": "10 Best Places to Live in Florida in 2025",
             "blogLink": "https://www.houzeo.com/blog/best-places-to-live-in-florida/"
+        }
+    ], 
+    "faqs": [
+        {
+            "question": "Are home prices dropping in Florida?", 
+            "answer": "No, Florida home prices aren't dropping broadly, but they show varied local trends. Statewide prices rose 1.8% YoY in December 2024. Markets like Tampa and Miami saw significant gains. Experts forecast continued 4% growth in 2025, though increased houses in Florida for sale may moderate prices in overvalued areas."
+        },
+        {
+            "question": "What’s the average price for a house in Florida?", 
+            "answer": "No, Florida home prices aren't dropping broadly, but they show varied local trends. Statewide prices rose 1.8% YoY in December 2024. Markets like Tampa and Miami saw significant gains. Experts forecast continued 4% growth in 2025, though increased houses in Florida for sale may moderate prices in overvalued areas."
         }
     ]
 }

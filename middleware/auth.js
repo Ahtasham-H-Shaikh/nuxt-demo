@@ -1,3 +1,5 @@
+import { useHousingMarketStore } from '../stores/housingMarket'
+
 export default defineNuxtRouteMiddleware(async (to) => {
     if(import.meta.server){
         const slug = to.params.slug || [];
@@ -11,7 +13,8 @@ export default defineNuxtRouteMiddleware(async (to) => {
             if(res.statusCode === 404){
                 throwErr()
             }
-            useState("json", () => res.data)   
+            const dataStore = useHousingMarketStore();
+            dataStore.setJsonData(res.data);
         }
     }
   });   

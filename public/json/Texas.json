@@ -1,5 +1,6 @@
 {
     "state": "Texas",
+    "initial": "TX",
     "banner": {
         "h1": "Texas Housing Market",
         "description": "The landscape of the housing market in Texas constantly evolves with shifting home prices and demand. Houzeo’s housing market report tracks constant changes in supply and demand across Texas. Our data offers real-time insights to help you make informed decisions."
