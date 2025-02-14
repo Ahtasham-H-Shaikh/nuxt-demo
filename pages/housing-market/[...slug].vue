@@ -3,6 +3,10 @@
     <div class="">
         <HousingMarketBanner/>
         <p class="font-sans">Hello with poppins</p>
+        <p v-for="(key, val) in jsonData">
+            {{ jsonData[val] }}
+            <br><br>
+        </p>
     </div>
 </template>
     
@@ -10,4 +14,6 @@
     definePageMeta({
         middleware: "auth"
     })
+    const jsonData = useState('json').value;
+    console.log(jsonData, 'json')
 </script>

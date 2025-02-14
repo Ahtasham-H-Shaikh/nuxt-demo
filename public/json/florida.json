@@ -6,52 +6,52 @@
     },
     "marketOverview":{
         "header": "<h2>Florida Housing Market Overview</h2>",
-        "description": "Florida housing prices show a 1.7% YoY growth as of December 2024. The constant growth in home prices indicates the strength of the housing market. Currently, the median home price in Florida is $410,800. The number of homes sold increased by 7.9% YoY.  You can also check the market competitiveness through median days on the market. Homes in Florida now spend 70 days on the market before going under a contract. All these metrics collectively indicate changes in the Florida housing market’s pace and affordability. What does it mean for home buyers and sellers? If you’re a buyer, you get more negotiation power due to extended median days on the market. Stabilized mortgage rates at around 6.50% make it even better. So, whether you are looking for a condo in Miami or a single-family home in Tampa, you can easily afford your dream Florida home. If you’re a seller, you can still make profits if you sell before prices decline any further. With increased Florida home sales drop, you must be ready to offer concessions to buyers."
+        "description": "Florida housing prices show a 1.7% YoY growth as of December 2024. The constant growth in home prices indicates the strength of the housing market. Currently, the median home price in Florida is $410,800. The number of homes sold increased by 7.9% YoY.<br><br> You can also check the market competitiveness through median days on the market. Homes in Florida now spend 70 days on the market before going under a contract. All these metrics collectively indicate changes in the Florida housing market’s pace and affordability.<br><br> What does it mean for home buyers and sellers?<br> If you’re a buyer, you get more negotiation power due to extended median days on the market. Stabilized mortgage rates at around 6.50% make it even better. So, whether you are looking for a condo in Miami or a single-family home in Tampa, you can easily afford your dream Florida home. If you’re a seller, you can still make profits if you sell before prices decline any further. With increased Florida home sales drop, you must be ready to offer concessions to buyers."
     } ,
     "housingSupply": {
         "header": "<h2>Florida Housing Supply</h2>",
-        "description": "Florida housing supply will grow as new construction expands and mortgage rates stabilize.<br><br> Experts predict moderate inventory gains in 2025 if interest rates hit 6%. Homes for sale in Florida increased by 22.6% year over year in December 2024. Currently, about 196,605 homes for sale are available in Florida. The Florida market is balanced with 5 to 6 months of supply. Fewer months indicate a seller’s market and more months indicate a buyer’s market"
+        "description": "Florida housing supply will grow as new construction expands and mortgage rates stabilize. Experts predict moderate inventory gains in 2025 if interest rates hit 6%. Homes for sale in Florida increased by 22.6% year over year in December 2024. Currently, about 196,605 homes for sale are available in Florida. The Florida market is balanced with 5 to 6 months of supply. Fewer months indicate a seller’s market and more months indicate a buyer’s market.<br><br> What does it mean for home buyers and sellers?<br> If you’re a buyer, you have an advantage with the increased number of homes for sale. The increasing inventory will potentially meet the demand and stabilize the house prices in Florida. Also, 5-6 months of supply signals a neutral market. It means Florida home buyers won't face extreme competition. If you’re a seller, you need to act fast and sell your home before more supply hits the Florida real estate market. Rising inventory could lower demand and lead to fewer offers from buyers. To attract buyers, focus on staging and marketing your home."
     },
 
     "housingDemand": {
         "header": "<h2>Florida Housing Demand</h2>",
-        "description": "The percentage of homes selling above the list price is a key indicator of housing demand. When more homes sell for more than the list price, it shows strong buyer competition and high demand. A decline suggests more supply. Tracking this trend helps you gauge market competitiveness. Almost, 9.9% of homes in Florida sold above the list price in December 2024. Price drops increased slightly from last year with 21.7% of homes with price drops. The 96.4% sale-to-list price suggests fewer bidding wars and more price flexibility for buyers"
+        "description": "The percentage of homes selling above the list price is a key indicator of housing demand. When more homes sell for more than the list price, it shows strong buyer competition and high demand. A decline suggests more supply. Tracking this trend helps you gauge market competitiveness.<br><br> Almost, 9.9% of homes in Florida sold above the list price in December 2024. Price drops increased slightly from last year with 21.7% of homes with price drops. The 96.4% sale-to-list price suggests fewer bidding wars and more price flexibility for buyers.<br><br> What does it mean for home buyers and sellers?<br> If you're a buyer, the current Florida housing market shifts in your favor with better deals. 21.7% of homes with price drops suggest fewer bidding wars and better affordability for Florida home buyers. If you’re a seller, you'll need patience as only 9.9% sell above the list. You will have to wait till spring and summer when housing demand increases. During summer, you may experience high demand and more bidding wars for homes. Right now, the Florida real estate market favors buyers with less demand and more negotiation power."
     },
     "buyersOrSellersMarket": {
-        "header": "<h2>Is Florida a Buyer’s or Seller’s Market?</h2>",
-        "description": "As of January 2025, home buyers in Florida hold an advantage due to increased housing inventory and median days on the market. Buyers have more leverage in Florida's real estate market as the total homes for sale has increased by 22.6% YoY. The median days on the market, currently at 70 days, also favor buyers",
+        "header": "<h2>Is it a Buyers or Sellers Market in Florida?</h2>",
+        "description": "As of January 2025, home buyers in Florida hold an advantage due to increased housing inventory and median days on the market. Buyers have more leverage in Florida's real estate market as the total homes for sale has increased by 22.6% YoY. The median days on the market, currently at 70 days, also favor buyers.<br><br> The current mortgage rates of 6.4% to 6.8% may reduce buying power. However, an 8.6% rise in new home listings could attract new home buyers in Florida. These trends vary significantly within Florida's diverse real estate markets.",
         "marketStatus": "-1", 
         "_comment": "marketStatus codes -2, -1, 0, 1, 2 represents Strong Buyer, Buyer, Neutral, Seller, Strong Seller respectively"
     },
     "marketInsights": {
         "header": "<h2>Florida Market Insights</h2>",
-        "description": "The housing market in Florida is less competitive compared to the nationwide market. Though, house prices in Florida are rising constantly yet the growth rate is slow. The median home price in Florida ($410,800) is less than the national median price of $427,388. Florida home inventory trend indicates growing options buyers. Currently, 196,605 homes for sale are available in the Sunshine State."
+        "description": "The housing market in Florida is less competitive compared to the nationwide market. Though, house prices in Florida are rising constantly yet the growth rate is slow. The median home price in Florida ($410,800) is less than the national median price of $427,388. Florida home inventory trend indicates growing options buyers. Currently, 196,605 homes for sale are available in the Sunshine State.<br><br> Housing markets like Miami and Fort Lauderdale have cooled off due to low competition. Homes in such cities spend an average of 90-97 days on the market and sell for about 6% below their list price. However, 2025 Florida real estate predictions suggest continued growth in some regions, as the market adjusts to economic factors. Overall, Florida’s housing market favors home buyers. If you’re buying a property in Florida, you must check for moving expenses and HOA fees as well."
     },
     "migrationTrends": {
         "header": "<h2>Nationwide Migration Trends</h2>",
-        "description": "Florida attracted significant inbound migration during winter 2024-2025's peak moving season. Over 20,000 residents searched for in-state homes from Nov '24 to Jan '25. Many new homebuyers arrive from New York, California, and Illinois. Low taxes and affordable housing draw families to Florida markets. Cities like Tampa, Orlando, and Jacksonville welcome the most new residents. This migration pattern reflects the broader cost of living index trends. Florida's index stays 20% lower than major coastal states' average."
+        "description": "Florida attracted significant inbound migration during winter 2024-2025's peak moving season. Over 20,000 residents searched for in-state homes from Nov '24 to Jan '25. Many new homebuyers arrive from New York, California, and Illinois. Low taxes and affordable housing draw families to Florida markets. Cities like Tampa, Orlando, and Jacksonville welcome the most new residents.<br><br> This migration pattern reflects the broader cost of living index trends. Florida's index stays 20% lower than major coastal states' average."
     },
     "blogs": [
         {
-            "imageUrl": "url",
-            "publishDate": "Feb 08, 2024",
-            "timeToRead": "18 min",
-            "heading": "Florida Housing Market Predictions for 2025",
-            "blogLink": "https://houzeo.com/blogs/blogUrl"
+            "imageUrl": "https://www.houzeo.com/blog/wp-content/uploads/2024/08/How-to-Sell-a-House-By-Owner-in-Florida.webp",
+            "publishDate": "Jan 28, 2025",
+            "timeToRead": "8 min",
+            "heading": "How to Sell a House By Owner in Florida (2025 Update)",
+            "blogLink": "https://www.houzeo.com/blog/how-to-sell-a-house-by-owner-in-florida/"
         },
         {
-            "imageUrl": "url",
-            "publishDate": "Feb 08, 2024",
-            "timeToRead": "18 min",
-            "heading": "Florida Housing Market Predictions for 2025",
-            "blogLink": "https://houzeo.com/blogs/blogUrl"
+            "imageUrl": "https://www.houzeo.com/blog/wp-content/uploads/2025/01/List-on-MLS_Florida.webp",
+            "publishDate": "Jan 31, 2025",
+            "timeToRead": "7 min",
+            "heading": "How to List on MLS in Florida Without a Realtor in 2025",
+            "blogLink": "https://www.houzeo.com/blog/how-to-list-on-mls-in-florida/"
         },
         {
-            "imageUrl": "url",
-            "publishDate": "Feb 08, 2024",
-            "timeToRead": "18 min",
-            "heading": "Florida Housing Market Predictions for 2025",
-            "blogLink": "https://houzeo.com/blogs/blogUrl"
+            "imageUrl": "https://www.houzeo.com/blog/wp-content/uploads/2024/03/Best-places-to-live-in-FL.webp",
+            "publishDate": "Feb 04, 2025",
+            "timeToRead": "9 min",
+            "heading": "10 Best Places to Live in Florida in 2025",
+            "blogLink": "https://www.houzeo.com/blog/best-places-to-live-in-florida/"
         }
     ]
 }

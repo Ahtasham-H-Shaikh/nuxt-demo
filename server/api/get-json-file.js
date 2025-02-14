@@ -17,12 +17,12 @@ export default defineEventHandler(async (event) => {
     return { error: 'No path provided' };
   }
 
-  const filePath = path.resolve(process.cwd(), `public/json/${filePathParam}`);
+  const filePath = path.resolve(process.cwd(), `public/json/${filePathParam}.json`);
 
   const fileExistsFlag = await fileExists(filePath);
   
   if (!fileExistsFlag) {
-    return { error: `File not found: ${filePath}` };
+    return { statusCode: 404, error: `File not found: ${filePath}` };
   }
 
   try {
@@ -30,8 +30,8 @@ export default defineEventHandler(async (event) => {
 
     const data = JSON.parse(fileContent);
 
-    return data;
+    return {statusCode: 200, data};
   } catch (error) {
-    return { error: `Error reading the file: ${error.message}` };
+    return { statusCode: 500, error: `Error reading the file: ${error.message}` };
   }
 });
