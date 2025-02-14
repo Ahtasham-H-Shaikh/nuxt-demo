@@ -5,30 +5,30 @@
         "description": "The landscape of Florida’s housing market evolves with shifting home prices and demand. Houzeo’s housing market report tracks constant changes in supply and demand across Florida. Our report offers real-time insights to help you make informed decisions."
     },
     "marketOverview":{
-        "header": "Florida Housing Market Overview",
+        "header": "<h2>Florida Housing Market Overview</h2>",
         "description": "Florida housing prices show a 1.7% YoY growth as of December 2024. The constant growth in home prices indicates the strength of the housing market. Currently, the median home price in Florida is $410,800. The number of homes sold increased by 7.9% YoY.  You can also check the market competitiveness through median days on the market. Homes in Florida now spend 70 days on the market before going under a contract. All these metrics collectively indicate changes in the Florida housing market’s pace and affordability. What does it mean for home buyers and sellers? If you’re a buyer, you get more negotiation power due to extended median days on the market. Stabilized mortgage rates at around 6.50% make it even better. So, whether you are looking for a condo in Miami or a single-family home in Tampa, you can easily afford your dream Florida home. If you’re a seller, you can still make profits if you sell before prices decline any further. With increased Florida home sales drop, you must be ready to offer concessions to buyers."
     } ,
     "housingSupply": {
-        "header": "Florida Housing Supply",
-        "description": "Florida housing supply will grow as new construction expands and mortgage rates stabilize. Experts predict moderate inventory gains in 2025 if interest rates hit 6%. Homes for sale in Florida increased by 22.6% year over year in December 2024. Currently, about 196,605 homes for sale are available in Florida. The Florida market is balanced with 5 to 6 months of supply. Fewer months indicate a seller’s market and more months indicate a buyer’s market"
+        "header": "<h2>Florida Housing Supply</h2>",
+        "description": "Florida housing supply will grow as new construction expands and mortgage rates stabilize.<br><br> Experts predict moderate inventory gains in 2025 if interest rates hit 6%. Homes for sale in Florida increased by 22.6% year over year in December 2024. Currently, about 196,605 homes for sale are available in Florida. The Florida market is balanced with 5 to 6 months of supply. Fewer months indicate a seller’s market and more months indicate a buyer’s market"
     },
 
     "housingDemand": {
-        "header": "Florida Housing Demand",
-        "description": "The percentage of homes selling above the list price is a key indicator of housing demand. When more homes sell for more than the list price, it shows strong buyer competition and high demand. A decline suggests more supply. Tracking this trend helps you gauge market competitiveness. Almost, 9.9% of homes in Florida sold above the list price in December 2024. Price drops increased slightly from last year with 21.7% of homes with price drops. The 96.4% sale-to-list price suggests fewer bidding wars and more price flexibility for buyers",
+        "header": "<h2>Florida Housing Demand</h2>",
+        "description": "The percentage of homes selling above the list price is a key indicator of housing demand. When more homes sell for more than the list price, it shows strong buyer competition and high demand. A decline suggests more supply. Tracking this trend helps you gauge market competitiveness. Almost, 9.9% of homes in Florida sold above the list price in December 2024. Price drops increased slightly from last year with 21.7% of homes with price drops. The 96.4% sale-to-list price suggests fewer bidding wars and more price flexibility for buyers"
     },
     "buyersOrSellersMarket": {
-        "header": "Is Florida a Buyer’s or Seller’s Market?",
+        "header": "<h2>Is Florida a Buyer’s or Seller’s Market?</h2>",
         "description": "As of January 2025, home buyers in Florida hold an advantage due to increased housing inventory and median days on the market. Buyers have more leverage in Florida's real estate market as the total homes for sale has increased by 22.6% YoY. The median days on the market, currently at 70 days, also favor buyers",
         "marketStatus": "-1", 
         "_comment": "marketStatus codes -2, -1, 0, 1, 2 represents Strong Buyer, Buyer, Neutral, Seller, Strong Seller respectively"
     },
     "marketInsights": {
-        "header": "Florida Market Insights",
+        "header": "<h2>Florida Market Insights</h2>",
         "description": "The housing market in Florida is less competitive compared to the nationwide market. Though, house prices in Florida are rising constantly yet the growth rate is slow. The median home price in Florida ($410,800) is less than the national median price of $427,388. Florida home inventory trend indicates growing options buyers. Currently, 196,605 homes for sale are available in the Sunshine State."
     },
     "migrationTrends": {
-        "header": "Nationwide Migration Trends",
+        "header": "<h2>Nationwide Migration Trends</h2>",
         "description": "Florida attracted significant inbound migration during winter 2024-2025's peak moving season. Over 20,000 residents searched for in-state homes from Nov '24 to Jan '25. Many new homebuyers arrive from New York, California, and Illinois. Low taxes and affordable housing draw families to Florida markets. Cities like Tampa, Orlando, and Jacksonville welcome the most new residents. This migration pattern reflects the broader cost of living index trends. Florida's index stays 20% lower than major coastal states' average."
     },
     "blogs": [
