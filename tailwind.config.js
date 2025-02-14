@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 export default {
     content: [
       "./components/**/*.{vue,js}",
@@ -9,8 +11,8 @@ export default {
     theme: {
       extend: {
         fontFamily: {
-          poppins: ['Poppins', 'sans-serif'],
-        }
+          sans: ['Poppins', ...fontFamily.sans], 
+        },
       },
     },
     plugins: [],

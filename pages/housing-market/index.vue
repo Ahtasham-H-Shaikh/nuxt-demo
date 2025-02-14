@@ -1,8 +1,8 @@
 <template>
     <div class="h-20">Navbar</div>
-    <div class="font-poppins">
+    <div class="">
         <HousingMarketBanner/>
-        <p class="font-poppins">Hello with poppins</p>
+        <p class="font-sans">Hello with poppins</p>
     </div>
 </template>
     
